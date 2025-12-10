@@ -206,10 +206,10 @@ void drawHeartScreen() {
         if (bpm >= 200 && showWarning) {
             drawColorRect(-0.48f, -0.52f, 0.98f, 0.99f, 1.0f, 0.0f, 0.0f);
 
-            // Veća WARNING poruka - niže pozicionirana
+            // ARNING poruka
             drawRect(-0.5f, -0.05f, 1.0f, 0.5f, warningTex);
 
-            // Manji BPM broj ispod poruke
+            
             float digitSize = 0.15f;
             float digitSpacing = digitSize * 1.1f;
             int digitCount = 3;
@@ -251,7 +251,7 @@ void drawBatteryScreen() {
         float digitSize = 0.18f;
         float digitSpacing = digitSize * 1.1f;
         float percentSize = 0.20f;
-        float percentWidth = percentSize * 0.8f;  // Procenat je malo uži od cifara
+        float percentWidth = percentSize * 0.8f;  
 
         if (battery == 100) {
             // 3 cifre + procenat

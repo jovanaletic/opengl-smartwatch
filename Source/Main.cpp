@@ -1,7 +1,4 @@
-﻿// ============================================
-// Main.cpp - Glavni fajl sa main funkcijom i globalnim promenljivama
-// ============================================
-#define _CRT_SECURE_NO_WARNINGS
+﻿#define _CRT_SECURE_NO_WARNINGS
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>

@@ -107,7 +107,7 @@ void updateTimers(GLFWwindow* window) {
         }
         else {
             if (bpm > 80) {
-                bpm -= 2;  
+                bpm -= 3;  
             }
             else if (bpm < 60) {
                 bpm += 2;  
@@ -130,7 +130,7 @@ void updateTimers(GLFWwindow* window) {
     else {
         ekgOffset -= 0.003f;
         if (ekgCompressionFactor > 0.0f) {
-            ekgCompressionFactor -= 0.004f;
+            ekgCompressionFactor -= 0.002f;
         }
         if (ekgCompressionFactor < 0.0f) ekgCompressionFactor = 0.0f;
     }
