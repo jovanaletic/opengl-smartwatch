@@ -125,8 +125,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Callbacks.cpp" />
-    <ClCompile Include="Drawing.cpp" />
+    <ClCompile Include="Source\Callbacks.cpp" />
+    <ClCompile Include="Source\Drawing.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\Util.cpp" />
   </ItemGroup>
