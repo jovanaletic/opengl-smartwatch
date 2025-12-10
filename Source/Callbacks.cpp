@@ -122,19 +122,19 @@ void updateTimers(GLFWwindow* window) {
         lastBpmChange = currentTime;
     }
     if (isDKeyPressed) {
-        ekgOffset -= 0.005f + (ekgCompressionFactor * 0.005f);
+        ekgOffset += 0.005f + (ekgCompressionFactor * 0.005f);
         if (ekgCompressionFactor < 3.0f) {
             ekgCompressionFactor += 0.003f;
         }
     }
     else {
-        ekgOffset -= 0.003f;
+        ekgOffset += 0.003f;
         if (ekgCompressionFactor > 0.0f) {
             ekgCompressionFactor -= 0.002f;
         }
         if (ekgCompressionFactor < 0.0f) ekgCompressionFactor = 0.0f;
     }
-    if (ekgOffset < -1.0f) ekgOffset = 0.0f;
+    if (ekgOffset > 1.0f) ekgOffset = 0.0f;
 
     if (bpm >= 200 && currentScreen == SCREEN_HEART) {
         if (!warningCycleActive) {
